@@ -13,3 +13,13 @@
 6.62
 """
 
+n = int(input('Введите число: '))
+
+
+def get_sequence(n):
+    return [round((1 + 1 / x) ** x, 5) for x in range(1, n + 1)]
+
+
+nums = get_sequence(n)
+
+print(round(sum(nums), 2))
