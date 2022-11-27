@@ -8,3 +8,11 @@
 0.56
 11
 """
+n = input('Введите вещественное число: ')
+
+def sum_digit_real_number(n):
+    return sum(map(int, list(str(n).replace('.', ''))))
+
+
+print(n)
+print(sum_digit_real_number(n))
