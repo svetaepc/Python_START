@@ -15,11 +15,11 @@ autopep8 ON
 from random import randint
 
 n = 9
-frst = 1
+first = 1
 last = 10
-[randint(frst, last) for i in range(n)]
+[randint(first, last) for i in range(n)]
 
-mylist = [randint(frst, last) for i in range(n)]
+mylist = [randint(first, last) for i in range(n)]
 
 print(mylist)
 
