@@ -9,5 +9,29 @@
 [12, 15, 16]
 [2, 3, 5, 6]
 [12, 15]
-"""
 
+autopep8 ON
+"""
+from random import randint
+
+n = 9
+frst = 1
+last = 10
+[randint(frst, last) for i in range(n)]
+
+mylist = [randint(frst, last) for i in range(n)]
+
+print(mylist)
+
+
+def pairs_mult(numbers):
+    results = []
+    while len(numbers) > 1:
+        results.append(numbers[0] * numbers[-1])
+        del numbers[0]
+        del numbers[-1]
+    if len(numbers) == 1: results.append(numbers[0] ** 2)
+    return results
+
+
+print(pairs_mult(mylist))
