@@ -19,6 +19,7 @@ def get_ratios(k):
         ratios[0] = randint(1, 10) 
     return ratios
 
+
 def get_polynomial(k, ratios):
     var = ['*x^']*(k-1) + ['*x']
     polynomial = [[a, b, c] for a, b, c  in itertools.zip_longest(ratios, var, range(k, 1, -1), fillvalue = '') if a !=0]
@@ -47,3 +48,5 @@ print(polynom2)
 
 with open('Polynomial2.txt', 'w') as data:
     data.write(polynom2)
+
+ 
