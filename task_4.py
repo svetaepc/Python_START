@@ -13,9 +13,9 @@ import re
 import itertools
 
 
-file1 = '33_Polynomial.txt'
-file2 = '33_Polynomial2.txt'
-file_sum = '34_Sum_polynomials.txt'
+file1 = 'Polynomial.txt'
+file2 = 'Polynomial2.txt'
+file_sum = 'Sum_polynomials.txt'
 
 # Получение данных из файла
 
