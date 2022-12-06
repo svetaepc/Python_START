@@ -48,7 +48,7 @@ def fold_pols(pol1, pol2):
     res.sort(key = lambda r: r[1], reverse = True)
     return res
 
-# Составление итогового многочлена
+# Итоговый многочлен
 
 def get_sum_pol(pol):
     var = ['*x^'] * len(pol)
