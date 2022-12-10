@@ -11,6 +11,8 @@
 with open('decoded.txt', 'r') as data:
     my_text = data.read()
 
+#after some change
+    
 def encode_rle(ss):
     str_code = ''
     prev_char = ''
