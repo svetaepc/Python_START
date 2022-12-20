@@ -11,5 +11,20 @@
 [1, 3, 5]
 [1, 2, 5, 3, 10]
 """
-A = [1, 2, 3, 5, 1, 5, 3, 10]
+lst = [1, 2, 3, 5, 1, 5, 3, 10]
 
+from collections import Counter
+
+c = Counter(lst)
+
+b = [n for n in c if c[n] == 1]
+print(b)
+
+d = [x for x in c.keys() if c[x] > 1]
+print(d)
+
+
+# с повторами:
+
+f = [x for x in lst if c[x] > 1]
+print(f)
