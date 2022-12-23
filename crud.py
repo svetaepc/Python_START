@@ -137,25 +137,4 @@ def get_token():
     file.close()
     return token
 
-    # ====================ВНИМАНИЕ ПРИМЕР ИСПОЛЬЗОВАНИЯ НИЖЕ=======================
-    # init_data_base("test.csv") # инициализация базы
-
-    # =================Примеры создания записей=================
-    # create('vasya','pupkin','123', 'email@email.com')
-    # create('vasya','pupkin','123', 'emaasd@email.com')
-    # create('vasya','pupkin','1232432', 'emgg54l@email.com')
-    # create('vasya','pupkin','1', 'emb@email.com')
-    # create('vasya','pup','123', 'email@email.com')
-    # create('vas1','123')
-
-    # ==================Примеры поиска записей===============
-    # print(retrive()) # Выбор всего что есть
-    # print(retrive(number='123'))
-    # print(retrive(id='123'))
-    # print(retrive(id='1', number='123'))
-
-    # ==================Обновление записи==================
-    # update(id='2', new_number='09876544', new_name='petya')
-
-    # ===================Удаление записи=======================
-    # delete('1')
+ 
