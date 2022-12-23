@@ -147,10 +147,6 @@ def ls_menu():
             print(
                 '\nТакого пункта меню не существует.\nВведите цифру, соответствующую пункту меню.')
 
-# def find(user_choice(n)):
-# делаем срез по таблице и выдаем необходимые данные Инне.
-
-
 def сhecking_the_number(arg):
     while arg.isdigit() != True:
         lg.logging.info('User entered an invalid menu value: {arg}')
