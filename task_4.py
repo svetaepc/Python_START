@@ -1,0 +1,49 @@
+"""
+Реализуйте RLE алгоритм шифрования строки: замените повторяющиеся символы строки на один символ и число его повторов.
+На первом месте идет количество повторов, на втором сам символ.
+Восстановите строку после шифрования.
+Ввод: значения типа <str>, можно получить из файла.
+Вывод: значение типа <str>, можно записать в файл.
+Примеры:
+ыыыыыррррр   аааааагггггггг
+5ы5р3 6а8г
+"""
+with open('decoded.txt', 'r') as data:
+    my_text = data.read()
+
+#after some change
+    
+def encode_rle(ss):
+    str_code = ''
+    prev_char = ''
+    count = 1
+    for char in ss:
+        if char != prev_char:
+            if prev_char:
+                str_code += str(count) + prev_char
+            count = 1
+            prev_char = char
+        else:
+            count += 1
+    return str_code
+
+            
+str_code = encode_rle(my_text)
+print(str_code)
+
+with open('encoded.txt', 'r') as data:
+    my_text2 = data.read()
+
+def decoding_rle(ss:str):
+    count = ''
+    str_decode = ''
+    for char in ss:
+        if char.isdigit():
+            count += char 
+        else:
+            str_decode += char * int(count)
+            count = ''
+    return str_decode
+
+str_decode = decoding_rle(my_text2)
+print(str_decode)
